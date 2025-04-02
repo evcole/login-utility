@@ -1,8 +1,19 @@
-# LOGU BASH Utility Instructions
+# LOGU Bash Utility
 
-These are the instructions for configuring LOGU for easier SSH and OC logins via BASH.  
+These are the instructions for configuring the LOGU login utility. This utility enables easier SSH and OC login via Bash.  
 
-## 
+
+## Prerequisites  
+
+1. All hosts and clusters you are trying to access are using the same base domain
+2. Your HashiCorp Vault contains a secrets/openshift/[CLUSTER] directory for each cluster with the following entries:  
+- api: The cluster's API URL
+- kubeconfig: The cluster's kubeconfig
+- kubeadmin: The cluster's kubeadmin password  
+3. OpenShift CLI is installed
+
+
+## Instructions
 
 1. Clone this directory or download the bash script.
 
